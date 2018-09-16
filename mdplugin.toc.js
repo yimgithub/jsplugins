@@ -52,7 +52,7 @@ SmithTOC.Init = function () {
     }
 
     function buildTOC(id, txt) {
-        return ['<p>', '<a href="#', id, '">', txt, '</a>', '<p>'].join();
+        return ['<p>', '<a href="#', id, '">', txt, '</a>', '</p>'].join();
     }
 
     var htmlTOC = '<div id="idx" style="z-index: 99;position: fixed;right: 28px;top: 10px;opacity: 0.4;overflow-y: auto;max-height: 90%;width: 200px;">' + pTOCs + '</div>';
